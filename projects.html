@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-card {
+            border-radius: 20px;
+            transition: all 0.5s ease;
+            min-height: 600px;
+            background: #f8f9fa;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+
+        }
+        
+        .nav-container {
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        
+        .nav-link {
+            border-radius: 15px;
+            margin: 8px 0;
+            transition: all 0.3s ease;
+            color: #495057;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        
+        .nav-link.active {
+            background: #0d6efd !important;
+            color: white !important;
+            transform: translateX(10px);
+        }
+        
+        .page-heading {
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 2.5rem;
+        }
+        
+        .project-content {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .fade-out {
+            opacity: 0;
+        }
+        
+        .tech-badge {
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            border-radius: 8px;
+            padding: 5px 15px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="sidebar col-md-3 col-lg-2 d-md-block position-fixed vh-100">
+        <div class="position-sticky pt-5">
+            <div class="nav-container">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-content="webapp">Web Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="mobile">Mobile App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="ecommerce">E-commerce Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="ai">AI Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="iot">IoT System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="blockchain">Blockchain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="game">Game Dev</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-content="analytics">Analytics</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="col-md-10 ms-auto">
+        <div class="content-wrapper p-5">
+            <h1 class="page-heading text-center display-5 mb-5">Our Projects</h1>
+            
+            <!-- Main Card -->
+            <div class="card main-card border-0">
+                <div class="card-body p-5">
+                    <div class="project-content" id="dynamic-content">
+                        <!-- Dynamic content here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Templates -->
+    <template id="webapp-template">
+        <div>
+            <h2 class="mb-4">🌐 Web Application</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead">Enterprise-level web application with real-time collaboration features</p>
+                    <div class="my-4">
+                        <h5>Technologies Used</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">GraphQL</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 bg-white p-3">
+                        <h5>Key Features</h5>
+                        <ul class="list-unstyled">
+                            <li>✔️ Real-time updates</li>
+                            <li>✔️ Role-based access</li>
+                            <li>✔️ Analytics dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Add similar templates for other projects -->
+    <template id="mobile-template">
+        <div>
+            <h2 class="mb-4">📱 Mobile App</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead">Cross-platform mobile application for health tracking</p>
+                    <div class="my-4">
+                        <h5>Technologies</h5>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Dart</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 bg-white p-3">
+                        <h5>Features</h5>
+                        <ul>
+                            <li>Health monitoring</li>
+                            <li>Workout plans</li>
+                            <li>Social sharing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Add remaining templates following similar structure -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const projects = {
+            'webapp': '#webapp-template',
+            'mobile': '#mobile-template',
+            'ecommerce': '#ecommerce-template',
+            'ai': '#ai-template',
+            'iot': '#iot-template',
+            'blockchain': '#blockchain-template',
+            'game': '#game-template',
+            'analytics': '#analytics-template'
+        };
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const projectId = this.dataset.content;
+                
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                const contentContainer = document.getElementById('dynamic-content');
+                contentContainer.classList.add('fade-out');
+                
+                setTimeout(() => {
+                    const template = document.querySelector(projects[projectId]);
+                    contentContainer.innerHTML = template.innerHTML;
+                    contentContainer.classList.remove('fade-out');
+                }, 300);
+            });
+        });
+
+        // Initialize first project
+        document.querySelector('[data-content="webapp"]').click();
+    </script>
+</body>
+</html>
