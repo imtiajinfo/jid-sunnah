@@ -141,3 +141,26 @@ function validateForm() {
   }
   return true;
 }
+
+const steps = document.querySelectorAll('.process-step');
+        const progressLine = document.getElementById('progressLine');
+
+        function updateProgress() {
+            const activeSteps = document.querySelectorAll('.process-step.active');
+            const progress = (activeSteps.length - 1) / (steps.length - 1);
+            progressLine.style.transform = `scaleY(${progress})`;
+        }
+
+        steps.forEach((step, index) => {
+            step.addEventListener('click', () => {
+                steps.forEach((s, i) => {
+                    if(i > index) s.classList.remove('active');
+                });
+                step.classList.add('active');
+                updateProgress();
+            });
+        });
+
+        // Initialize first step
+        steps[0].classList.add('active');
+        updateProgress();
