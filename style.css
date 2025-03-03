@@ -378,12 +378,15 @@ body {
   
   .grdnt-card.purple {
     background: linear-gradient(150deg, #f731db, #4600f1 100%);
-  }
+}
   
   .grdnt-card.green {
     background: linear-gradient(150deg, #39ef74, #4600f1 100%);
   }
   
+  .grdnt-card.blue {
+    background: linear-gradient(150deg, #0d6efd63, #4600f1 100%);
+}
   .grd-btn {
     text-transform: uppercase;
     width: 180px;
