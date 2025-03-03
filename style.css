@@ -44,9 +44,10 @@ body {
 }
 
 /* Navbar */
+
 .main-navbar {
-    background: linear-gradient(to right, var(--dark-color), var(--primary-color));
-    padding: 15px 0;
+  background: linear-gradient(to right, #2a456652, var(--primary-color));
+  padding: 15px 0;
 }
 
 .navbar-brand img {
@@ -456,7 +457,6 @@ body {
 
 .gallery-section {
     background-color: #f8f9fa; /* Light grey background */
-    padding: 40px 0;
 }
 
 .gallery-card {
