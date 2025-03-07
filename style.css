@@ -45,10 +45,14 @@ body {
 .section-gradient-2 {
   background: linear-gradient(45deg, #ffffff 0%, #f1f8ff 100%);
 }
+.header{
+  background-color: #fff;
+}
 
-.topbar .topbar-inner {
+.topbar{
   height: 40px;
-  padding: 10px 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .topbar a,

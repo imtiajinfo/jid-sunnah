@@ -6,6 +6,8 @@
     <title>About Us - Dynamic Card</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <style>
         .main-card {
             border: none;
@@ -60,6 +62,50 @@
 <div class="abt-hdng">
     <h2 class="text-center">About Us</h2>
 </div>
+<section class="header sticky-top">
+    <div class="container topbar">
+        <div class="row">
+            <div class="col-lg-7 text-start">
+                <div class="d-inline-flex align-items-center me-2">
+                    <span class="fa fa-phone-alt me-2 text-dark"></span>
+                    <a href="#" class="text-secondary"><span>+0171 345 6789</span></a>
+                </div>
+                <div class="d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2 text-dark"></span>
+                    <a href="#" class="text-secondary"><span>jamia.islamia@google.com</span></a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar shadow  navbar-expand-lg main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="70" height="65">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student registration.html">Student Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
     <nav class="sidebar col-md-3 col-lg-2 d-md-block position-fixed vh-100">
         <div class="position-sticky pt-5">
             <ul class="nav flex-column">
@@ -183,9 +229,29 @@
             </div>
         </div>
     </template>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Lilium IT © 2025</p>
+        </footer>
+    </div>
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/32247f93db.js" crossorigin="anonymous"></script>
+
     <script>
         const contentMap = {
             'story': '#story-template',
