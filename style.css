@@ -46,28 +46,33 @@ body {
   background: linear-gradient(45deg, #ffffff 0%, #f1f8ff 100%);
 }
 
-.main-navbar {
-  background: linear-gradient(to right, #2a456652, var(--primary-color));
-  padding: 15px 0;
+.topbar .topbar-inner {
+  height: 40px;
+  padding: 10px 15px;
 }
 
-.navbar-brand img {
-  max-height: 50px;
+.topbar a,
+.topbar a i {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.topbar a:hover,
+.topbar a i:hover {
+  color: teal;
 }
 
 .nav-link {
-  color: #fff !important;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   margin: 0 15px;
   transition: all 0.3s;
 }
 
-.nav-link:hover {
-  color: var(--secondary-color) !important;
+.main-nav {
+
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(12, 71, 125, 1) 100%);
 }
-
-
-
 
 /* Hero Slider */
 .hero-section {
@@ -770,64 +775,60 @@ a {
   text-decoration: underline;
 }
 
-
-
 .footer-basic {
-  padding: 20px 0;
-  background-color: teal;
-  color: #4b4c4d;
+  padding:15px 0;
+  background: linear-gradient(8deg, rgba(39,55,66,1) 0%, rgba(109,100,99,1) 100%);
+  color:#eaf1f8;
 }
 
 .footer-basic ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:15px;
+  line-height:1;
+  margin-bottom:0;
 }
 
 .footer-basic li {
-  padding: 0 10px;
+  padding:0 10px;
 }
 
 .footer-basic ul a {
-  color: inherit;
+  color: #71bdff;
   text-decoration: none;
   opacity: 0.8;
 }
-
 .footer-basic ul a:hover {
-  opacity: 1;
+  opacity:1;
 }
 
 .footer-basic .social {
-  text-align: center;
-  padding-bottom: 25px;
+  text-align:center;
+  padding-bottom:20px;
 }
 
-.footer-basic .social>a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+.footer-basic .social > a {
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  line-height: 24px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #121212;
+  border: 2px solid #ccc;
   margin: 0 8px;
   color: inherit;
   opacity: 0.75;
 }
 
-.footer-basic .social>a:hover {
-  opacity: 0.9;
+.footer-basic .social > a:hover {
+  opacity:0.9;
 }
 
 .footer-basic .copyright {
-  margin-top: 15px;
+  margin-top:15px;
   text-align: center;
-  font-size: 13px;
-  color: #331cff;
-  margin-bottom: 0;
+  font-size: 15px;
+  margin-bottom:0;
 }
