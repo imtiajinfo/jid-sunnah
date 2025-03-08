@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +21,16 @@
             border: none;
             border-radius: 15px;
             transition: transform 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
         }
-        
+
         .donation-card:hover {
             transform: translateY(-5px);
         }
 
         .gradient-primary {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-        }
+    background: linear-gradient(135deg, #198754 0%, #0056b3 100%);
+}
 
         .gradient-success {
             background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
@@ -47,18 +48,18 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transform: translateY(0);
         }
 
         .btn-donate:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
         .btn-donate:active {
             transform: translateY(1px);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
 
         .btn-donate::after {
@@ -68,9 +69,9 @@
             right: -50%;
             bottom: -50%;
             left: -50%;
-            background: linear-gradient(to bottom, 
-                rgba(255,255,255,0.15) 0%, 
-                rgba(0,0,0,0.1) 100%);
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0.15) 0%,
+                    rgba(0, 0, 0, 0.1) 100%);
             transform: rotateZ(60deg) translate(-5em, 7.5em);
         }
 
@@ -88,18 +89,18 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 15px;
             color: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .custom-donate-section input {
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             border: none !important;
             border-radius: 10px !important;
             padding: 12px 20px !important;
         }
 
         .custom-donate-section .input-group-text {
-            background: rgba(255,255,255,0.9) !important;
+            background: rgba(255, 255, 255, 0.9) !important;
             border: none !important;
             border-radius: 10px 0 0 10px !important;
         }
@@ -108,9 +109,10 @@
             width: 50px;
             height: auto;
         }
-        
+
         .btn-donate {
-            border-radius: 30px !important; /* More rounded buttons */
+            border-radius: 30px !important;
+            /* More rounded buttons */
         }
 
         .payment-method {
@@ -128,7 +130,7 @@
 
         .payment-method.active {
             border-color: #007bff;
-            background: rgba(0,123,255,0.05);
+            background: rgba(0, 123, 255, 0.05);
         }
 
         .payment-logo {
@@ -137,20 +139,18 @@
             margin: 10px 0;
         }
 
-        .gradient-primary {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-        }
-
         .gradient-success {
             background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
         }
+
         .text-warning {
-    --bs-text-opacity: 1;
-    color: rgb(210 7 255) !important;
-}
+            --bs-text-opacity: 1;
+            color: rgb(210 7 255) !important;
+        }
+
         .gradient-warning {
-    background: linear-gradient(135deg, #6b07ff 0%, #f600ff 100%);
-}
+            background: linear-gradient(135deg, #6b07ff 0%, #f600ff 100%);
+        }
 
         .btn-donate {
             border: none;
@@ -168,9 +168,9 @@
             width: 50px;
             height: auto;
         }
-        
     </style>
 </head>
+
 <body class="bg-light">
     <section class="header sticky-top">
         <div class="container topbar">
@@ -218,12 +218,12 @@
             </div>
         </nav>
     </section>
-    
+
 
     <!-- Hero Section -->
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h1 class="display-4 mb-3">Support Our Islamic Education</h1>
+            <h1 class="display-4 mb-3">Support Our Jamia Islamia Darus Sunnah</h1>
             <p class="lead text-muted">Help us continue providing quality Islamic education to students</p>
         </div>
 
@@ -309,25 +309,19 @@
                     <div class="row g-3">
                         <div class="col-md-4">
                             <div class="payment-method text-center" data-gateway="bkash">
-                                <img src="img/BKash-Logo.wine.svg" 
-                                     alt="Bkash" 
-                                     class="payment-logo">
+                                <img src="img/BKash-Logo.wine.svg" alt="Bkash" class="payment-logo">
                                 <h5>Bkash</h5>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="payment-method text-center" data-gateway="nagad">
-                                <img src="img/Nagad-Logo.wine.svg" 
-                                     alt="Nagad" 
-                                     class="payment-logo">
+                                <img src="img/Nagad-Logo.wine.svg" alt="Nagad" class="payment-logo">
                                 <h5>Nagad</h5>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="payment-method text-center" data-gateway="rocket">
-                                <img src="img/dutch-bangla-rocket-seeklogo.png" 
-                                     alt="Rocket" 
-                                     class="payment-logo">
+                                <img src="img/dutch-bangla-rocket-seeklogo.png" alt="Rocket" class="payment-logo">
                                 <h5>Rocket</h5>
                             </div>
                         </div>
@@ -369,15 +363,15 @@
     <!-- Custom JS -->
     <script>
         document.querySelectorAll('.btn-donate').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const amount = this.getAttribute('data-amount');
                 handleDonation(amount);
             });
         });
 
-        document.getElementById('customDonate').addEventListener('click', function() {
+        document.getElementById('customDonate').addEventListener('click', function () {
             const amount = document.getElementById('customAmount').value;
-            if(amount > 0) {
+            if (amount > 0) {
                 handleDonation(amount);
             } else {
                 alert('Please enter a valid amount');
@@ -396,7 +390,7 @@
 
         // Payment Method Selection
         document.querySelectorAll('.payment-method').forEach(method => {
-            method.addEventListener('click', function() {
+            method.addEventListener('click', function () {
                 document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('active'));
                 this.classList.add('active');
                 selectedGateway = this.dataset.gateway;
@@ -405,32 +399,32 @@
 
         // Donation Handling
         function handleDonation(amount) {
-            if(!selectedGateway) {
+            if (!selectedGateway) {
                 alert('Please select a payment method first');
                 return;
             }
 
             currentAmount = amount;
             const gatewayName = selectedGateway.charAt(0).toUpperCase() + selectedGateway.slice(1);
-            
+
             document.getElementById('gatewayName').textContent = gatewayName;
             document.getElementById('donationAmount').textContent = `৳${amount}`;
-            
+
             const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
             paymentModal.show();
         }
 
         // Update all donation buttons
         document.querySelectorAll('.btn-donate').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const amount = this.getAttribute('data-amount');
                 handleDonation(amount);
             });
         });
 
-        document.getElementById('customDonate').addEventListener('click', function() {
+        document.getElementById('customDonate').addEventListener('click', function () {
             const amount = document.getElementById('customAmount').value;
-            if(amount > 0) {
+            if (amount > 0) {
                 handleDonation(amount);
             } else {
                 alert('Please enter a valid amount');
@@ -438,45 +432,46 @@
         });
     </script>
 
-<section class="footer">
-    <footer class="bg-dark text-white px-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h4>Contact Us</h4>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            Paity, Dhaka, Bangladesh, 1360
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-phone me-2"></i>
-                            +01778-897924
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i
-                                class="fab fa-facebook fa-1x"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
+    <section class="footer">
+        <footer class="bg-dark text-white px-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Paity, Dhaka, Bangladesh, 1360
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                +01778-897924
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i
+                                    class="fab fa-facebook fa-1x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</section>
+        </footer>
+    </section>
 
 
 
 </body>
+
 </html>
