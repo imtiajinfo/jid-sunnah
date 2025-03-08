@@ -820,7 +820,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #6a8dff, #0061ff);
+  background: linear-gradient(145deg, #29baab, #0500ffc4);
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
