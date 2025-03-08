@@ -802,14 +802,13 @@ a {
 }
 
 .bg-dark {
-  --bs-bg-opacity: 1;
-  background: linear-gradient(177deg, #476ab0 25%, rgb(119 115 183) 74%);
+  background: linear-gradient(177deg, #6184c9 25%, rgb(127 122 199) 74%);
 }
 .social-links a{
   font-size: 1.5em;
 }
 .footer h4 {
-  color: #3ab0b1;
+  color: #5ee6e7;
 }
 
 .back-to-top {
