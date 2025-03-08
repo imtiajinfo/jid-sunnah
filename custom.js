@@ -102,5 +102,3 @@ function validateForm() {
   }
   return true;
 }
-
-

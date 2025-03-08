@@ -809,3 +809,51 @@ a {
 .social-links a{
   font-size: 1.5em;
 }
+.footer h4 {
+  color: #3ab0b1;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #6a8dff, #0061ff);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.back-to-top::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(45deg);
+  margin-top: 6px;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top:active {
+  transform: scale(0.9);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
