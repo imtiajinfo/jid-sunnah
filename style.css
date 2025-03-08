@@ -803,7 +803,7 @@ a {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background: linear-gradient(177deg, rgb(44 107 157) 25%, rgb(49 139 91 / 24%) 74%);
+  background: linear-gradient(177deg, #476ab0 25%, rgb(119 115 183) 74%);
 }
 .social-links a{
   font-size: 1.5em;

@@ -102,3 +102,27 @@ function validateForm() {
   }
   return true;
 }
+
+
+<script>
+        document.querySelectorAll('.btn-donate').forEach(button => {
+            button.addEventListener('click', function() {
+                const amount = this.getAttribute('data-amount');
+                handleDonation(amount);
+            });
+        });
+
+        document.getElementById('customDonate').addEventListener('click', function() {
+            const amount = document.getElementById('customAmount').value;
+            if(amount > 0) {
+                handleDonation(amount);
+            } else {
+                alert('Please enter a valid amount');
+            }
+        });
+
+        function handleDonation(amount) {
+            // Add your payment processing logic here
+            alert(`Thank you for your donation of $${amount}!`);
+            document.getElementById('customAmount').value = '';
+        }
