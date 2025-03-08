@@ -7,45 +7,6 @@ document.querySelectorAll('.btn-toggle .btn').forEach(button => {
 });
 
 
-
-
-const carousel = document.querySelector('#customCarousel');
-const progressBar = document.querySelector('.carousel-progress-bar');
-let interval;
-
-function startProgress() {
-    clearInterval(interval);
-    progressBar.style.width = '0%';
-    const intervalTime = 5000; // Should match data-bs-interval if set
-    let width = 0;
-
-    interval = setInterval(() => {
-        if (width >= 100) {
-            clearInterval(interval);
-        } else {
-            width += 1;
-            progressBar.style.width = width + '%';
-        }
-    }, intervalTime / 100);
-}
-
-carousel.addEventListener('slid.bs.carousel', () => {
-    startProgress();
-});
-
-// Initialize progress on first load
-startProgress();
-
-// Pause on hover
-carousel.addEventListener('mouseenter', () => {
-    clearInterval(interval);
-});
-
-carousel.addEventListener('mouseleave', () => {
-    startProgress();
-});
-
-
 // JavaScript to handle modal image display
 document.addEventListener("DOMContentLoaded", function () {
     const imageModal = document.getElementById("imageModal");

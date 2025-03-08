@@ -7,61 +7,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .main-card {
-            border: none;
-            border-radius: 20px;
-            transition: all 0.5s ease;
-            min-height: 400px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .nav-item {
-            margin: 10px 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link {
-            border-radius: 15px;
-            font-weight: 500;
-            color: #333;
-        }
-        
-        .nav-link.active {
-            color: rgb(0, 94, 255) !important;
-        }
-        
-        .content-wrapper {
-            padding-left: 2rem;
-            padding-right: 3rem;
-            min-height: 70vh;
-            max-width: 150vh;
-            display: flex;
-            align-items: center;
-        }
-        
-        .card-content {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-        
-        .fade-out {
-            opacity: 0;
-        }
-        .abt-hdng h2{
-            color: blueviolet;
-            background-color: rgb(161, 214, 255);
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Navigation Menu -->
+ 
 
-<div class="abt-hdng">
-    <h2 class="text-center">About Us</h2>
-</div>
 <section class="header sticky-top">
     <div class="container topbar">
         <div class="row">
@@ -106,137 +55,154 @@
         </div>
     </nav>
 </section>
-    <nav class="sidebar col-md-3 col-lg-2 d-md-block position-fixed vh-100">
-        <div class="position-sticky pt-5">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" data-content="story">Our Story</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-content="mission">Mission</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-content="team">Our Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-content="values">Values</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-content="achievements">Achievements</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<h1 class="display-4 fw-bold mb-3 text-center mt-3">About Jamia Islamia Darus Sunnah</h1>
 
-    <!-- Main Card -->
-    <main class="col-md-10 ms-auto">
-        
-        <div class="content-wrapper">
-            <div class="card main-card border-primary w-100 mx-auto">
-                <div class="card-body p-5">
-                    <div class="card-content" id="dynamic-content">
-                        <!-- Content will be loaded here dynamically -->
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero-section mt-5">
+        <div class="container">
         </div>
-    </main>
+    </header>
 
-    <!-- Content Templates -->
-    <template id="story-template">
-        <div>
-            <h2 class="card-title display-4 mb-4">Our Story</h2>
-            <p class="card-text lead">Founded in 2010, we began as a small startup with big dreams...</p>
-            <ul class="list-unstyled">
-                <li>✔️ 2010: Company Founded</li>
-                <li>✔️ 2015: Expanded Globally</li>
-                <li>✔️ 2023: Industry Leader</li>
-            </ul>
-        </div>
-    </template>
+    <style>
+        .hero-section {
+            background: url(../jid-sunnah/img/abt.jpg);
+            height: 55vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background-repeat: no-repeat;
+        }
 
-    <template id="mission-template">
-        <div>
-            <h2 class="card-title display-4 mb-4">Our Mission</h2>
-            <p class="card-text lead">To empower businesses through innovative solutions...</p>
-            <div class="mt-4">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Core Objectives</h4>
-                        <ul>
-                            <li>Sustainable Growth</li>
-                            <li>Customer Success</li>
-                            <li>Technological Innovation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </template>
+        .mission-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
 
-    <template id="team-template">
-        <div>
-            <h2 class="card-title display-4 mb-4">Our Team</h2>
-            <p class="card-text lead">A diverse group of experts from around the world...</p>
-            <div class="row mt-4">
+        .mission-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: #2a5a3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -35px auto 20px;
+        }
+
+        .section-heading {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section-heading:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #2a5a3c;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #2a5a3c;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+.btn{
+    border-radius: 50px;
+    color: wheat;
+}
+    </style>
+
+    <!-- Mission Section -->
+    <section class="py-2">
+        <div class="container">
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <h5>Leadership</h5>
-                    <p>Experienced industry veterans</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Developers</h5>
-                    <p>Technical experts team</p>
-                </div>
-            </div>
-        </div>
-    </template>
-
-    <template id="values-template">
-        <div>
-            <h2 class="card-title display-4 mb-4">Core Values</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-group">
-                        <li class="list-group-item">Integrity First</li>
-                        <li class="list-group-item">Customer Focus</li>
-                        <li class="list-group-item">Innovation Driven</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </template>
-
-    <template id="achievements-template">
-        <div>
-            <h2 class="card-title display-4 mb-4">Achievements</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5>2023 Innovation Award</h5>
-                            <p>Global recognition</p>
+                    <div class="mission-card card h-100 p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-hands-helping text-white"></i>
                         </div>
+                        <h3 class="mb-3">Community Service</h3>
+                        <p class="text-muted">Dedicated to serving communities through educational initiatives and social welfare programs.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5>98% Satisfaction</h5>
-                            <p>Customer rating</p>
+                    <div class="mission-card card h-100 p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-book-open text-white"></i>
                         </div>
+                        <h3 class="mb-3">Education</h3>
+                        <p class="text-muted">Promoting authentic Islamic knowledge through structured learning programs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mission-card card h-100 p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-heart text-white"></i>
+                        </div>
+                        <h3 class="mb-3">Charity</h3>
+                        <p class="text-muted">Facilitating charitable giving to support those in need according to Islamic principles.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </template>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca" alt="Our Story" class="img-fluid rounded-3">
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h2 class="text-muted mb-3">Our Story</h2>
+                    <h3 class="mb-4">Rooted in Tradition, Growing with Purpose</h3>
+                    <p class="lead text-muted">Established in 2010, Sunnah Foundation has been committed to preserving Islamic traditions while addressing modern challenges. Our journey began with a small group of dedicated individuals and has grown into a international movement serving communities worldwide.</p>
+                    <button class="btn bg-success btn-outline-dark mt-3">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="footer">
     <div class="footer-basic">
         <footer>
             <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
                 <li class="list-inline-item"><a href="#">Services</a></li>
@@ -247,45 +213,9 @@
             <p class="copyright">Lilium IT © 2025</p>
         </footer>
     </div>
+</section>
 
-    <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/32247f93db.js" crossorigin="anonymous"></script>
-
-    <script>
-        const contentMap = {
-            'story': '#story-template',
-            'mission': '#mission-template',
-            'team': '#team-template',
-            'values': '#values-template',
-            'achievements': '#achievements-template'
-        };
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const contentType = this.dataset.content;
-                
-                // Remove active class from all links
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                
-                // Add active class to clicked link
-                this.classList.add('active');
-                
-                // Animate content change
-                const contentContainer = document.getElementById('dynamic-content');
-                contentContainer.classList.add('fade-out');
-                
-                setTimeout(() => {
-                    const template = document.querySelector(contentMap[contentType]);
-                    contentContainer.innerHTML = template.innerHTML;
-                    contentContainer.classList.remove('fade-out');
-                }, 300);
-            });
-        });
-
-        // Load initial content
-        document.querySelector('[data-content="story"]').click();
-    </script>
 </body>
 </html>
