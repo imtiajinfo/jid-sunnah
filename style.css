@@ -802,7 +802,7 @@ a {
 }
 
 .bg-dark {
-  background: linear-gradient(177deg, #6184c9 25%, rgb(127 122 199) 74%);
+  background: linear-gradient(1deg, #6b86ff8c 0%, #ccafe9b5 100%);
 }
 .social-links a{
   font-size: 1.5em;
