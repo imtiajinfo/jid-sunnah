@@ -6,15 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reuse previous styles */
+        .donation-card,
+        .project-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gradient-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
-
 <body>
 
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add any necessary interactivity here
+        document.querySelectorAll('.project-card button').forEach(button => {
+            button.addEventListener('click', function () {
+                // Add project details modal or navigation
+                alert('Project details coming soon!');
+            });
+        });
+    </script>
     <section class="header sticky-top">
         <div class="container topbar">
             <div class="row">
@@ -52,14 +102,142 @@
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
                         <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
-                        <li class="nav-item"><a class="nav-link" href="student registration.html">Student Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="student registration.html">Student
+                                Registration</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
+    <!-- Page Header -->
+    <div class="gradient-header mb-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Our Ongoing Projects</h1>
+            <p class="lead">Building the future of Islamic education</p>
+        </div>
+    </div>
 
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Featured Project -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">New Campus Construction</h2>
+                <p class="text-muted">We're expanding our facilities to accommodate more students and provide modern
+                    learning environments. The new campus will feature:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>15 new classrooms</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Digital library</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Prayer hall capacity for 500
+                        worshippers</li>
+                    <li><i class="bi bi-check-circle text-success me-2"></i>Student dormitories</li>
+                </ul>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Progress</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="project-card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-3">Free Education Program</h4>
+                        <p class="text-muted">Providing quality Islamic education to underprivileged students</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">500+ Students</span>
+                            <span class="badge bg-primary ms-2">Ongoing</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-3">Quran Memorization</h4>
+                        <p class="text-muted">Specialized program for Huffaz development</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">30 Graduates</span>
+                            <span class="badge bg-warning ms-2">Limited Seats</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-3">Community Outreach</h4>
+                        <p class="text-muted">Weekly seminars and public lectures</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">100+ Events</span>
+                            <span class="badge bg-info ms-2">Weekly</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Gallery -->
+        <h3 class="mb-4">Recent Activities</h3>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5>Annual Graduation Ceremony</h5>
+                        <p class="text-muted small">Watch our latest batch of graduates receive their certificates</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5>Seminar on Islamic Finance</h5>
+                        <p class="text-muted small">Expert discussion on modern financial ethics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5>Campus Tour</h5>
+                        <p class="text-muted small">Virtual tour of our facilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <section class="footer">
         <footer class="bg-dark text-white px-5">
             <div class="container">
@@ -87,7 +265,8 @@
                     <div class="col-md-4">
                         <h4>Follow Us</h4>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i class="fab fa-facebook fa-1x"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i
+                                    class="fab fa-facebook fa-1x"></i></a>
                             <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
                             <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
                         </div>
