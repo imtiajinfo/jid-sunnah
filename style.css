@@ -856,3 +856,6 @@ a {
 html {
   scroll-behavior: smooth;
 }
+.navbar {
+  padding: 0px;
+}
