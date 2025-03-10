@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-title {
+            color: #2c3e50;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <section class="header sticky-top">
+        <div class="container topbar">
+            <div class="row">
+                <div class="col-lg-7 text-start">
+                    <div class="d-inline-flex align-items-center me-2">
+                        <span class="fa fa-phone-alt me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>+0171 345 6789</span></a>
+                    </div>
+                    <div class="d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>jamia.islamia@google.com</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar shadow  navbar-expand-lg main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" width="70" height="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="voulanteer.html">Volunteer Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="container py-5">
+        <h1 class="text-center mb-5 display-4">Video Gallery</h1>
+
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Video Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F359736417108663%2F&show_text=false&width=560&t=0" width="560" height="317" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">জামিয়া ইসলামিয়া দারুস সুন্নাহ মাদ্রাসা ও এতিমখানার হেফজ বিভাগের কোরআনের পাখিদের বিশ্রামের সময় সিসিটিভি ক্যামেরায় ভিডিও ফুটেজ
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=321&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F977019641095895%2F&show_text=false&width=560&t=0" width="560" height="321" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">الجامعه الاسلاميه دار السنه ودار الايتم আজ ০১/০৬/২০২৪ জামিয়া ইসলামিয়া দারুস সুন্নাহ মাদ্রাসা ও এতিমখানার নূরানী বিভাগের মাগরিবের পরের ক্লাসের দৃশ্য।
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F1188856162283312%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">...............মক্তবের ছাত্র কতো সুন্দর ও সাবলীলভাবে এবং কনফিডেন্টের সাথে বাংলা বাক্য গুলোকে ইংরেজি করে ফেলতেছে.........
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=321&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F977019641095895%2F&show_text=false&width=560&t=0" width="560" height="321" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">মাই বলে পরানের পোলা এমনে আয় মাদ্রাসায় যাবি তো বেলা হয়ে যায়। #jamiaislamiadarussunnahdhaka
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F470274519018577%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">প্রতিদিনের মতো আজকেও আসরের নামাজের পরে ছাত্রদের ইংলিশ লার্নিং কোর্সের উপর মেহনতের দৃশ্য
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F7930187873716683%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">#studentsuccess #English #Spoken #jamiaislamiadarussunnahdhaka #highlightsシ゚ #viralreelschallenge
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Video Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F820782702899933%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">Mr. Maulana Mohammad Mohsin Sahib, English teacher of our Madrasah, he regularly gives special emphasis to all the students of our Madrasah on English course, so you can enroll your child in our Madrasah without further delay
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F470274519018577%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">জামিয়া ইসলামিয়া দারুস সুন্নাহ মাদ্রাসা ও যুবসমাজের উদ্যোগে সংস্কৃতিক সন্ধ্যায়। সংগীত পরিবেশন করছেন অত্র মাদ্রাসার ছাত্র আব্দুল্লাহ জারির।</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F1489566015245831%2F&show_text=false&width=560&t=0" width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">Alhamdulillah on 08/06/2024 today Mr. Maulana Md. Mohsin Sahib our English speaking teacher is taking English learning course&class #fypシ゚viralシ #foryouシ #quranrecitation #islam #muslim #مدراسة #طلاب #Alem
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F1035043688350577%2F&show_text=false&width=560&t=0" width="560" height="317" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">প্রতিদিনের মতো আজকেও আসরের নামাজের পরে ছাত্রদের ইংলিশ লার্নিং কোর্সের উপর মেহনতের দৃশ্য
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F1898739177288316%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">জামিয়া ইসলামিয়া দারুস সুন্নাহ মাদ্রাসা ও যুবসমাজের উদ্যোগে সংস্কৃতিক সন্ধ্যায়। সংগীত পরিবেশন করছেন অত্র মাদ্রাসার ছাত্র আব্দুল্লাহ জারির।
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card video-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558110025149%2Fvideos%2F1179411483134760%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="video-title text-center">প্রভু আমাকে দাও দুটি ডানা 🇧🇩🇧🇩❤️❤️ জামিয়া ইসলামিয়া দারুসসুন্নাহ মাদ্রাসা ও যুব সমাজের উদ্যোগে সাংস্কৃতিক সন্ধ্যা #আলহামদুলিল্লাহ #qowmimadrasabangladesh #Face
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="footer">
+        <footer class="bg-dark text-white px-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Paity, Dhaka, Bangladesh, 1360
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                +01778-897924
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i class="fab fa-facebook fa-1x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/32247f93db.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

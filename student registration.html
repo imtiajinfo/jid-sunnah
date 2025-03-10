@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-card {
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 3px;
+        }
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <section class="header sticky-top">
+        <div class="container topbar">
+            <div class="row">
+                <div class="col-lg-7 text-start">
+                    <div class="d-inline-flex align-items-center me-2">
+                        <span class="fa fa-phone-alt me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>+0171 345 6789</span></a>
+                    </div>
+                    <div class="d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>jamia.islamia@google.com</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar shadow  navbar-expand-lg main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" width="70" height="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="student registration.html">Student Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card form-card">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Student Registration Form</h2>
+                        
+                        <form>
+                            <!-- Personal Information -->
+                            <div class="form-section">
+                                <h5 class="mb-3">Personal Information</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label required">Full Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">District</label>
+                                        <select class="form-select" required>
+                                            <option value="">Select District</option>
+                                            <option>Dhaka</option>
+                                            <option>Chittagong</option>
+                                            <option>Rajshahi</option>
+                                            <!-- Add more districts -->
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">Thana</label>
+                                        <select class="form-select" required>
+                                            <option value="">Select Thana</option>
+                                            <option>Ramna</option>
+                                            <option>Dhanmondi</option>
+                                            <option>Mohammadpur</option>
+                                            <!-- Add more thanas -->
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">Phone Number</label>
+                                        <input type="tel" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address Information -->
+                            <div class="form-section">
+                                <h5 class="mb-3">Address Information</h5>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label required">Present Address</label>
+                                        <textarea class="form-control" rows="3" required></textarea>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label class="form-label required">Permanent Address</label>
+                                        <textarea class="form-control" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Information -->
+                            <div class="form-section">
+                                <h5 class="mb-3">Additional Information</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Facebook ID</label>
+                                        <input type="url" class="form-control">
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">NID Number</label>
+                                        <input type="number" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">Occupation</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label required">Emergency Phone Number</label>
+                                        <input type="tel" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Educational Information -->
+                            <div class="form-section">
+                                <h5 class="mb-3">Educational Information</h5>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label required">Educational Background</label>
+                                        <textarea class="form-control" rows="4" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <footer class="bg-dark text-white px-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Paity, Dhaka, Bangladesh, 1360
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                +01778-897924
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i class="fab fa-facebook fa-1x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://kit.fontawesome.com/32247f93db.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

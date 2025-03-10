@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Jamia Darus Sunnah</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .donation-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .donation-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .donation-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gradient-primary {
+    background: linear-gradient(135deg, #198754 0%, #0056b3 100%);
+}
+
+        .gradient-success {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+        }
+
+        .gradient-glossy {
+            background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+        }
+
+        .btn-donate {
+            border: none;
+            border-radius: 15px;
+            padding: 12px 35px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+        }
+
+        .btn-donate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-donate:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-donate::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            bottom: -50%;
+            left: -50%;
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0.15) 0%,
+                    rgba(0, 0, 0, 0.1) 100%);
+            transform: rotateZ(60deg) translate(-5em, 7.5em);
+        }
+
+        .btn-donate:hover::after {
+            animation: buttonShine 1s forwards;
+        }
+
+        @keyframes buttonShine {
+            100% {
+                transform: rotateZ(60deg) translate(1em, -1em);
+            }
+        }
+
+        .custom-donate-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .custom-donate-section input {
+            background: rgba(255, 255, 255, 0.9);
+            border: none !important;
+            border-radius: 10px !important;
+            padding: 12px 20px !important;
+        }
+
+        .custom-donate-section .input-group-text {
+            background: rgba(255, 255, 255, 0.9) !important;
+            border: none !important;
+            border-radius: 10px 0 0 10px !important;
+        }
+
+        .nav-logo {
+            width: 50px;
+            height: auto;
+        }
+
+        .btn-donate {
+            border-radius: 30px !important;
+            /* More rounded buttons */
+        }
+
+        .payment-method {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .payment-method:hover {
+            border-color: #007bff;
+            transform: translateY(-3px);
+        }
+
+        .payment-method.active {
+            border-color: #007bff;
+            background: rgba(0, 123, 255, 0.05);
+        }
+
+        .payment-logo {
+            height: 40px;
+            width: auto;
+            margin: 10px 0;
+        }
+
+        .gradient-success {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+        }
+
+        .text-warning {
+            --bs-text-opacity: 1;
+            color: rgb(210 7 255) !important;
+        }
+
+        .gradient-warning {
+            background: linear-gradient(135deg, #6b07ff 0%, #f600ff 100%);
+        }
+
+        .btn-donate {
+            border: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-donate:hover {
+            opacity: 0.9;
+        }
+
+        .nav-logo {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <section class="header sticky-top">
+        <div class="container topbar">
+            <div class="row">
+                <div class="col-lg-7 text-start">
+                    <div class="d-inline-flex align-items-center me-2">
+                        <span class="fa fa-phone-alt me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>+01778-897924</span></a>
+                    </div>
+                    <div class="d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>jamiaislamiadarussunnah73@gmail.com</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <a class="text-dark px-2" href="https://www.facebook.com/profile.php?id=61558110025149"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar shadow  navbar-expand-lg main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" width="70" height="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="voulanteer.html">Volunteer
+                                Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- Hero Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 mb-3">Support Our Jamia Islamia Darus Sunnah</h1>
+            <p class="lead text-muted">Help us continue providing quality Islamic education to students</p>
+        </div>
+
+        <!-- Donation Cards -->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card donation-card h-100">
+                    <div class="card-body text-center p-4">
+                        <h4 class="mb-3">Monthly Support</h4>
+                        <h2 class="text-primary mb-4">৳৫০০</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Regular Support</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Continuous Sadaqah</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Monthly Report</li>
+                        </ul>
+                        <button class="btn btn-primary btn-donate gradient-primary text-white" data-amount="50">
+                            Donate Monthly
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card donation-card h-100">
+                    <div class="card-body text-center p-4">
+                        <h4 class="mb-3">Quarterly Support</h4>
+                        <h2 class="text-success mb-4">৳১৫০০</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Quarterly Commitment</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Special Updates</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Recognition Certificate</li>
+                        </ul>
+                        <button class="btn btn-success btn-donate gradient-success text-white" data-amount="150">
+                            Donate Quarterly
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card donation-card h-100 mb-5">
+                    <div class="card-body text-center p-4">
+                        <h4 class="mb-3">Annual Support</h4>
+                        <h2 class="text-warning mb-4">৳২০০০</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Annual Sponsorship</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Exclusive Updates</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Donor Recognition</li>
+                        </ul>
+                        <button class="btn btn-warning btn-donate gradient-warning text-white" data-amount="500">
+                            Donate Annually
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Amount -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card donation-card">
+                    <div class="card-body text-center">
+                        <h4 class="mb-4">Custom Amount</h4>
+                        <div class="input-group mb-3 gap-1">
+                            <span class="input-group-text rounded">৳</span>
+                            <input type="number" class="form-control rounded-pill" placeholder="Enter amount" id="customAmount">
+                            <button class="btn rounded-pill btn-primary gradient-primary text-white" id="customDonate">
+                                Donate Now
+                            </button>
+                        </div>
+                        <p class="text-muted small mb-0">All donations are tax deductible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <div class="card donation-card mb-5">
+                <div class="card-body">
+                    <h4 class="text-center">Select Payment Method</h4>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="payment-method text-center" data-gateway="bkash">
+                                <img src="img/BKash-Logo.wine.svg" alt="Bkash" class="payment-logo">
+                                <h5>Bkash</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="payment-method text-center" data-gateway="nagad">
+                                <img src="img/Nagad-Logo.wine.svg" alt="Nagad" class="payment-logo">
+                                <h5>Nagad</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="payment-method text-center" data-gateway="rocket">
+                                <img src="img/dutch-bangla-rocket-seeklogo.png" alt="Rocket" class="payment-logo">
+                                <h5>Rocket</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Complete Donation via <span id="gatewayName"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Send <span id="donationAmount"></span> to:</p>
+                    <h4 class="text-center mb-3">017XX-XXXXXX</h4>
+                    <div class="mb-3">
+                        <label class="form-label">Your Phone Number</label>
+                        <input type="text" class="form-control" placeholder="01XXXXXXXXX">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Transaction ID</label>
+                        <input type="text" class="form-control" placeholder="Enter TrxID">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/32247f93db.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script>
+        document.querySelectorAll('.btn-donate').forEach(button => {
+            button.addEventListener('click', function () {
+                const amount = this.getAttribute('data-amount');
+                handleDonation(amount);
+            });
+        });
+
+        document.getElementById('customDonate').addEventListener('click', function () {
+            const amount = document.getElementById('customAmount').value;
+            if (amount > 0) {
+                handleDonation(amount);
+            } else {
+                alert('Please enter a valid amount');
+            }
+        });
+
+        function handleDonation(amount) {
+            // Add your payment processing logic here
+            alert(`Thank you for your donation of $${amount}!`);
+            document.getElementById('customAmount').value = '';
+        }
+    </script>
+    <script>
+        let selectedGateway = null;
+        let currentAmount = 0;
+
+        // Payment Method Selection
+        document.querySelectorAll('.payment-method').forEach(method => {
+            method.addEventListener('click', function () {
+                document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('active'));
+                this.classList.add('active');
+                selectedGateway = this.dataset.gateway;
+            });
+        });
+
+        // Donation Handling
+        function handleDonation(amount) {
+            if (!selectedGateway) {
+                alert('Please select a payment method first');
+                return;
+            }
+
+            currentAmount = amount;
+            const gatewayName = selectedGateway.charAt(0).toUpperCase() + selectedGateway.slice(1);
+
+            document.getElementById('gatewayName').textContent = gatewayName;
+            document.getElementById('donationAmount').textContent = `৳${amount}`;
+
+            const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+            paymentModal.show();
+        }
+
+        // Update all donation buttons
+        document.querySelectorAll('.btn-donate').forEach(button => {
+            button.addEventListener('click', function () {
+                const amount = this.getAttribute('data-amount');
+                handleDonation(amount);
+            });
+        });
+
+        document.getElementById('customDonate').addEventListener('click', function () {
+            const amount = document.getElementById('customAmount').value;
+            if (amount > 0) {
+                handleDonation(amount);
+            } else {
+                alert('Please enter a valid amount');
+            }
+        });
+    </script>
+
+    <section class="footer">
+        <footer class="bg-dark text-white px-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Paity, Dhaka, Bangladesh, 1360
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                +01778-897924
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61558110025149" class="text-white me-3"><i
+                                    class="fab fa-facebook fa-1x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-1x"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter fa-1x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+</body>
+
+</html>
