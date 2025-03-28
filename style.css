@@ -74,9 +74,8 @@ body {
 }
 
 .main-nav {
-  background: linear-gradient(181deg, rgb(34 193 195 / 50%) 0%, rgba(12, 71, 125, 1) 100%);
+  background: linear-gradient(181deg, rgb(113 186 255) 0%, rgba(12, 71, 125, 1) 100%);
 }
-
 /* Hero Slider */
 .hero-section {
   background: linear-gradient(rgba(29, 52, 79, 0.8), rgba(29, 52, 79, 0.8)),
